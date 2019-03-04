@@ -72,6 +72,10 @@ class RohdeSchwarz_AFQ100B(VisaInstrument):
                            get_cmd=':SOUR:TRIG:SOUR?',
                            set_cmd=':SOUR:TRIG:SOUR {}',
                            vals=vals.Enum('MAN','EXT','BUS','AUTO'))
+                           # 'MAN'  trigger from front panel or bus
+                           # 'EXT'  trigger from back panel input
+                           # 'BUS'  trigger from remote bus (e.g. USB interface)
+                           # 'AUTO' triggers are sent repeatedly from the firmware
 
 
         self.add_function('reset', call_cmd='*RST')
