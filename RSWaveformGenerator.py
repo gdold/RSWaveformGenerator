@@ -4,9 +4,10 @@ import datetime
 class RSWaveformGenerator():
     """
     Generates .wv files from I/Q for the AFQ 100B I/Q modulation generator
+        and related Rohde & Schwarz instruments
     
     RSWaveformGenerator(instrument)
-        Initialises waveform generator read to upload to qcodes instrument
+        Initialises waveform generator ready to upload to qcodes instrument
         If instrument is not provided, can generate and save .wv files
             but not upload to instrument
         
