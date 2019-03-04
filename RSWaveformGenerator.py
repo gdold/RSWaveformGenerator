@@ -72,7 +72,6 @@ class RSWaveformGenerator():
         
         # If scaling is desired, normalise to peak vector length of 1.0
         if self.normalise:
-            print('Normalising!')
             max_IQ_data = np.max(np.abs( I_data + 1j*Q_data ))
             IQ_data = IQ_data / max_IQ_data
             peak = 1.0
